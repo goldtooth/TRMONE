@@ -23337,7 +23337,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </library>
 <library name="GT_Capacitor">
 <packages>
-<package name="PC-D5.3MM" urn="urn:adsk.eagle:footprint:32377/1">
+<package name="PC-D5.3MM" urn="urn:adsk.eagle:footprint:32377/1" locally_modified="yes">
 <circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.694" width="0.127" layer="39"/>
 <pad name="+" x="-1" y="0" drill="0.8" diameter="1.35" shape="square"/>
@@ -23361,6 +23361,24 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="0" y1="1.016" x2="1.778" y2="1.9685" width="0.127" layer="21"/>
 <wire x1="0" y1="1.651" x2="1.27" y2="2.3495" width="0.127" layer="21"/>
 <wire x1="1.75" y1="0" x2="2.413" y2="0.381" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="22"/>
+<wire x1="-4.445" y1="0" x2="-3.81" y2="0" width="0.127" layer="22"/>
+<wire x1="-3.175" y1="0" x2="-3.81" y2="0" width="0.127" layer="22"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="0.635" width="0.127" layer="22"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-0.635" width="0.127" layer="22"/>
+<wire x1="0" y1="2.667" x2="0" y2="1.651" width="0.127" layer="22"/>
+<wire x1="0" y1="1.651" x2="0" y2="1.016" width="0.127" layer="22"/>
+<wire x1="0" y1="1.016" x2="0" y2="0.381" width="0.127" layer="22"/>
+<wire x1="0" y1="0.381" x2="0" y2="-1.524" width="0.127" layer="22"/>
+<wire x1="0" y1="-1.524" x2="0" y2="-2.286" width="0.127" layer="22"/>
+<wire x1="0" y1="-2.286" x2="0" y2="-2.667" width="0.127" layer="22"/>
+<wire x1="0" y1="-2.286" x2="2.286" y2="-1.27" width="0.127" layer="22"/>
+<wire x1="0" y1="-1.524" x2="2.54" y2="-0.381" width="0.127" layer="22"/>
+<wire x1="1.5875" y1="0.635" x2="2.413" y2="1.016" width="0.127" layer="22"/>
+<wire x1="0" y1="0.381" x2="2.159" y2="1.524" width="0.127" layer="22"/>
+<wire x1="0" y1="1.016" x2="1.778" y2="1.9685" width="0.127" layer="22"/>
+<wire x1="0" y1="1.651" x2="1.27" y2="2.3495" width="0.127" layer="22"/>
+<wire x1="1.75" y1="0" x2="2.413" y2="0.381" width="0.127" layer="22"/>
 </package>
 <package name="CERAMIC-5MM">
 <wire x1="-3.54" y1="1.143" x2="3.54" y2="1.143" width="0.127" layer="21"/>
@@ -23385,7 +23403,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </package>
 </packages>
 <packages3d>
-<package3d name="PC-D5.3MM" urn="urn:adsk.eagle:package:32406/1" type="box">
+<package3d name="PC-D5.3MM" urn="urn:adsk.eagle:package:32406/1" locally_modified="yes" type="box">
 <packageinstances>
 <packageinstance name="PC-D5.3MM"/>
 </packageinstances>
@@ -24075,6 +24093,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY31" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
 <part name="ONOFF3" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
 <part name="ONOFF4" library="solpad" library_urn="urn:adsk.eagle:library:364" deviceset="LSP10" device="" package3d_urn="urn:adsk.eagle:package:26501/1"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="M1206" value="220r"/>
 </parts>
 <sheets>
 <sheet>
@@ -24618,6 +24637,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="ONOFF4" gate="1" x="149.86" y="193.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="152.781" y="194.31" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R12" gate="G$1" x="132.08" y="193.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="135.89" y="194.5386" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="135.89" y="189.738" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -25512,10 +25535,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="SUPPLY23" gate="G$1" pin="GND2"/>
 <pinref part="ONOFF1" gate="1" pin="MP"/>
-<wire x1="137.16" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="ONOFF3" gate="1" pin="MP"/>
-<wire x1="137.16" y1="185.42" x2="137.16" y2="193.04" width="0.1524" layer="91"/>
-<junction x="137.16" y="185.42"/>
+<wire x1="137.16" y1="185.42" x2="127" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="127" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="127" y1="193.04" x2="127" y2="185.42" width="0.1524" layer="91"/>
+<junction x="127" y="185.42"/>
 </segment>
 <segment>
 <pinref part="SHIFT" gate="G$1" pin="A"/>
@@ -25799,6 +25823,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="U$1" pin="PD4(XCK/T0)"/>
 <wire x1="48.26" y1="198.12" x2="50.8" y2="198.12" width="0.1524" layer="91"/>
 <label x="50.8" y="198.12" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ONOFF3" gate="1" pin="MP"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
