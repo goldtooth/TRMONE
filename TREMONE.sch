@@ -23144,8 +23144,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R41" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10k??"/>
 <part name="R45" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="1k?"/>
 <part name="R46" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="1k"/>
-<part name="IN_JACK" library="gm-jacks2" library_urn="urn:adsk.eagle:library:3189606" deviceset="MMMONNN" device="" package3d_urn="urn:adsk.eagle:package:3189615/3"/>
-<part name="OUT_JACK" library="gm-jacks2" library_urn="urn:adsk.eagle:library:3189606" deviceset="MMMONNN" device="" package3d_urn="urn:adsk.eagle:package:3189615/3"/>
+<part name="IN_JACK" library="gm-jacks2" library_urn="urn:adsk.eagle:library:3189606" deviceset="MMMONNN" device="NOHOLES" value="MMMONNNNOHOLES"/>
+<part name="OUT_JACK" library="gm-jacks2" library_urn="urn:adsk.eagle:library:3189606" deviceset="MMMONNN" device="NOHOLES" value="MMMONNNNOHOLES"/>
 <part name="SUPPLY40" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
 <part name="SUPPLY41" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
 <part name="SUPPLY42" library="GOLD_SUPPLY" deviceset="GND1" device=""/>
