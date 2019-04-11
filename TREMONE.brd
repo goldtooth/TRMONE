@@ -162,17 +162,19 @@
 <wire x1="9.4" y1="9.5" x2="9.4" y2="0" width="0" layer="20"/>
 <wire x1="88.4" y1="90" x2="81" y2="90" width="0" layer="20"/>
 <wire x1="81" y1="90" x2="81" y2="100" width="0" layer="20"/>
-<wire x1="81" y1="100" x2="71.7" y2="100" width="0" layer="20"/>
-<wire x1="71.7" y1="100" x2="49.2" y2="100" width="0" layer="20"/>
-<wire x1="49.2" y1="100" x2="49.2" y2="90" width="0" layer="20"/>
+<wire x1="81" y1="100" x2="51.2" y2="100" width="0" layer="20"/>
+<wire x1="51.2" y1="100" x2="51.2" y2="98" width="0" layer="20"/>
+<wire x1="51.2" y1="98" x2="49.2" y2="98" width="0" layer="20"/>
+<wire x1="49.2" y1="98" x2="49.2" y2="90" width="0" layer="20"/>
 <wire x1="49.2" y1="90" x2="44.7" y2="90" width="0" layer="20"/>
 <wire x1="44.7" y1="90" x2="44.7" y2="89.5" width="0" layer="20"/>
 <wire x1="44.7" y1="89.5" x2="43.7" y2="89.5" width="0" layer="20"/>
 <wire x1="43.7" y1="89.5" x2="43.7" y2="90" width="0" layer="20"/>
 <wire x1="43.7" y1="90" x2="39.2" y2="90" width="0" layer="20"/>
-<wire x1="39.2" y1="90" x2="39.2" y2="100" width="0" layer="20"/>
-<wire x1="39.2" y1="100" x2="16.7" y2="100" width="0" layer="20"/>
-<wire x1="16.7" y1="100" x2="7.4" y2="100" width="0" layer="20"/>
+<wire x1="39.2" y1="90" x2="39.2" y2="98" width="0" layer="20"/>
+<wire x1="39.2" y1="98" x2="37.2" y2="98" width="0" layer="20"/>
+<wire x1="37.2" y1="98" x2="37.2" y2="100" width="0" layer="20"/>
+<wire x1="37.2" y1="100" x2="7.4" y2="100" width="0" layer="20"/>
 <wire x1="7.4" y1="100" x2="7.4" y2="90" width="0" layer="20"/>
 <wire x1="7.4" y1="90" x2="0" y2="90" width="0" layer="20"/>
 <wire x1="9.4" y1="0" x2="43.7" y2="0" width="0" layer="20"/>
@@ -3320,6 +3322,9 @@ einem neuen Namen ab.</description>
 <element name="U$16" library="fv-1consolidated" package="HOLD" value="" x="29.72" y="7.4" smashed="yes"/>
 <element name="U$17" library="fv-1consolidated" package="HOLD" value="" x="58.7" y="7.4" smashed="yes"/>
 <element name="U$18" library="fv-1consolidated" package="HOLD" value="" x="73.2" y="7.4" smashed="yes"/>
+<element name="U$20" library="fv-1consolidated" package="HOLD" value="" x="15.951071875" y="23.5" smashed="yes"/>
+<element name="U$22" library="fv-1consolidated" package="HOLD" value="" x="73.2" y="23.5" smashed="yes"/>
+<element name="U$23" library="fv-1consolidated" package="HOLD" value="" x="44.2" y="7.4" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -4496,9 +4501,9 @@ einem neuen Namen ab.</description>
 <wire x1="59.47550625" y1="3.8062" x2="58.6238" y2="4.65790625" width="0.2032" layer="1"/>
 <wire x1="58.6238" y1="4.65790625" x2="58.6238" y2="5.49449375" width="0.2032" layer="1"/>
 <wire x1="58.6238" y1="5.49449375" x2="55.66389375" y2="8.4544" width="0.2032" layer="1"/>
-<wire x1="55.66389375" y1="8.4544" x2="44.279303125" y2="8.4544" width="0.2032" layer="1"/>
-<wire x1="41.058703125" y1="5.2338" x2="32.44449375" y2="5.2338" width="0.2032" layer="1"/>
-<wire x1="44.279303125" y1="8.4544" x2="41.058703125" y2="5.2338" width="0.2032" layer="1"/>
+<wire x1="55.66389375" y1="8.4544" x2="46.925540625" y2="8.4544" width="0.2032" layer="1"/>
+<wire x1="43.704940625" y1="5.2338" x2="32.44449375" y2="5.2338" width="0.2032" layer="1"/>
+<wire x1="46.925540625" y1="8.4544" x2="43.704940625" y2="5.2338" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="D8" pad="K"/>
